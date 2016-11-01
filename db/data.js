@@ -77,17 +77,17 @@ export const orders = [
     }
 ]
     //reviews + memories
-export const memories = [
+export const reviews = [
     {
-        "body": "Beautiful castle in the happiest place on Earth!",
+        "content": "Beautiful castle in the happiest place on Earth!",
         "star": 5,
-        "date": "12/12/2015",
-        "headline": "AWESOME!"
+        "date": "2015-12-12",
+        "subject": "AWESOME!"
     },
     {
-        "body": "Very great castle",
+        "content": "Very great castle",
         "star": 1,
-        "date": "10/31/2016",
-        "headline": "Great castle"
+        "date": "2016-10-31",
+        "subject": "Great castle"
     } 
 ]
