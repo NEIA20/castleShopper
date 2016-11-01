@@ -24,10 +24,6 @@ const User = db.define('users', {
     type: Sequelize.STRING,
     unique: true
   },
-  username: {
-    type: Sequelize.STRING,
-    allowNull: false
-  },
   address: {
     type: Sequelize.STRING
   },
