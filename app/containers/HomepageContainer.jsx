@@ -4,8 +4,9 @@ import HomepageFilter from '../components/HomepageFilter';
 
 
 //make sure root reducer has this key allCastles
-const mapStateToProps = ({allCastles}) => ({
-    allCastles
+const mapStateToProps = ({allCastles, category}) => ({
+    allCastles,
+    category
 })
 
 //onSubmit etc should go here to put into my presentational component 

@@ -2,11 +2,12 @@ import React from 'react';
 import Login from './Login';
 import SignupModal from './SignupModal';
 import {Link} from 'react-router';
-
 import { connect } from 'react-redux';
 // import {login} from 'APP/app/reducers/auth'
 
-export default ({user, logout}) => {
+export default ({user, logout, ascending, descending}) => {
+    console.log('ascending....',ascending)
+    console.log('ascending....',descending)
         return (
             <div className="row">
                 <div id="nav-column" className="col-md-12">
@@ -32,8 +33,8 @@ export default ({user, logout}) => {
                                 <a href="#" className="dropdown-toggle" data-toggle="dropdown">Categories <b className="caret"></b></a>
                                 <ul className="dropdown-menu">
                                     <li><a href="#">Highest ratings</a></li>
-                                    <li><a href="#">Price Ascending</a></li>
-                                    <li><a href="#">Price Descending</a></li>
+                                    <li><a onClick={ascending} href="#">Price Ascending</a></li>
+                                    <li><a onClick={descending} href="#">Price Descending</a></li>
                                     <li className="divider"></li>
                                 </ul>
                             </li>
@@ -64,16 +65,11 @@ export default ({user, logout}) => {
                                         </div>
                                     </div>
                                     </li>
-                                    <li className="divider"></li>
-                                    <li>
-                                    <input className="btn btn-primary btn-block" type="button" id="sign-in-google" value="Sign In with Google" />
-                                    <input className="btn btn-primary btn-block" type="button" id="sign-in-twitter" value="Sign In with Twitter" />
-                                    </li>
+                                    
                                 </ul>
                             </li>
                             </ul>
                             }
-                            
 
                         </div>
                     </nav>

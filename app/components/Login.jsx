@@ -9,7 +9,7 @@ export const Login = ({login}) => {
     login(evt.target.username.value, evt.target.password.value)
   } }>
     <p id="sign-in-comment">Sign in below</p>
-    <input id="userinputarea" className="form-control" name="username" placeholder="username" />
+    <input id="userinputarea" className="form-control" name="username" placeholder="email" />
     <input className="form-control" name="password" placeholder="password" type="password" />
     <input id="login-button" className="btn btn-default" type="submit" value="Login" />
   </form>)
